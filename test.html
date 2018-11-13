@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Carte intéractif du marché de Noël</title>
+  </head>
+
+  <body>
+    <div class="divplan">
+      <img src="http://noel-en-ardenne.com/wp-content/uploads/2018/10/patinoire.png" class="icon" alt="Patinoire place ducale marché de noel" onclick="overlayon1()">
+      <img src="http://noel-en-ardenne.com/wp-content/uploads/2018/10/manege.png" class="icon" alt="Manège place ducale marché de noel" onclick="overlayon2()">
+      <img src="http://noel-en-ardenne.com/wp-content/uploads/2018/10/grande_roue.png" class="icon" alt="Manège place ducale marché de noel" onclick="overlayon3()">
+      <img src="http://noel-en-ardenne.com/wp-content/uploads/2018/10/petit_train.png" class="icon" alt="Petit train place ducale marché de noel" onclick="overlayon4()">
+      <img src="http://noel-en-ardenne.com/wp-content/uploads/2018/10/restauration.png" class="icon" alt="Restauration place ducale marché de noel" onclick="overlayon1()">
+      <img src="http://noel-en-ardenne.com/wp-content/uploads/2018/10/videoprojection.png" class="icon" alt="Videoprojection mapping place ducale marché de noel" onclick="overlayon2()">
+      <img src="http://noel-en-ardenne.com/wp-content/uploads/2018/10/labyrinthe.png" class="icon" alt="Labyrinthe place ducale marché de noel" onclick="overlayon3()">
+      <img src="http://noel-en-ardenne.com/wp-content/uploads/2018/10/foret_legendaire.png" class="icon" alt="Foret légendaire place ducale marché de Noël" onclick="overlayon4()">
+      <img src="http://noel-en-ardenne.com/wp-content/uploads/2018/10/lettres.png" class="icon" alt="Boite au lettre père noel place ducale marché de Noël" onclick="overlayon1()">
+      <img src="http://noel-en-ardenne.com/wp-content/uploads/2018/10/kota.png" class="icon" alt="kota place ducale marché de Noël" onclick="overlayon2()">
+    </div>
+
+    <div id="overlay1"  onclick="overlayoff1()">
+      <div class="overlay-content">
+        <img src="http://noel-en-ardenne.com/wp-content/uploads/2018/10/ambiance27.jpg" class="imgover" alt="dsst">
+        <p class="textover">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<a class="infosup" href="">Plus d'info</a></p>
+        <p class="exit">Cliquer n'importe ou pour fermer</p>
+      </div>
+    </div>
+
+    <div id="overlay2" onclick="overlayoff2()">
+      <div class="overlay-content">
+        <img src="http://noel-en-ardenne.com/wp-content/uploads/2018/10/roue.jpg" class="imgover" alt="grande roue">
+        <p class="textover">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<a class="infosup" href="">Plus d'info</a></p>
+        <p class="exit">Cliquer n'importe ou pour fermer</p>
+      </div>
+    </div>
+
+    <div id="overlay3" onclick="overlayoff3()">
+      <div class="overlay-content">
+        <img src="http://noel-en-ardenne.com/wp-content/uploads/2018/10/ruepietonne.png" class="imgover" alt="rue pietone">
+        <p class="textover">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<a class="infosup" href="">Plus d'info</a></p>
+        <p class="exit">Cliquer n'importe ou pour fermer</p>
+      </div>
+    </div>
+
+    <div id="overlay4" onclick="overlayoff4()">
+      <div class="overlay-content">
+        <img src="http://noel-en-ardenne.com/wp-content/uploads/2018/10/ruepietonne.png" class="imgover" alt="Rue pietonne">
+        <p class="textover">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a class="infosup" href="#">Plus d'info</a></p>
+        <p class="exit">Cliquer n'importe ou pour fermer</p>
+      </div>
+    </div>
+
+    <script>
+      function overlayon1() {
+        document.getElementById("overlay1").style.width = "100%";
+        }
+      function overlayoff1() {
+        document.getElementById("overlay1").style.width = "0%";
+        }
+      function overlayon2() {
+        document.getElementById("overlay2").style.width = "100%";
+        }
+      function overlayoff2() {
+        document.getElementById("overlay2").style.width = "0%";
+        }
+      function overlayon3() {
+        document.getElementById("overlay3").style.width = "100%";
+        }
+      function overlayoff3() {
+        document.getElementById("overlay3").style.width = "0%";
+        }
+      function overlayon4() {
+        document.getElementById("overlay4").style.width = "100%";
+      }
+      function overlayoff4() {
+        document.getElementById("overlay4").style.width = "0%";
+      }
+    </script>
+    <style>
+      html, body, div, span, applet, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, img, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, embed,
+      figure, figcaption, footer, header, hgroup,
+      menu, nav, output, ruby, section, summary,
+      time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article, aside, details, figcaption, figure,
+      footer, header, hgroup, menu, nav, section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol, ul {
+        list-style: none;
+      }
+      blockquote, q {
+        quotes: none;
+      }
+      blockquote:before, blockquote:after,
+      q:before, q:after {
+        content: '';
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      /* FIN DU RESET CSS */
+
+      html{
+        width: 100%;
+        height: 100%;
+        font-size: 62.5%;
+      }
+      body{
+        background-color: #191C3B;
+      }
+      .divplan{
+        position: relative;
+        background-image: url("http://noel-en-ardenne.com/wp-content/uploads/2018/10/img6.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 935px;
+        width: 1525px;
+        margin: 0 auto;
+      }
+
+      .icon:hover{
+        filter: drop-shadow(8px 8px 10px gold);
+        font-size: 100px !important;
+        cursor: pointer;
+      }
+      .icon{
+      position: absolute;
+      font-size: 95px !important;
+      left: 770px;
+      top: 420px;
+      height: auto;
+      width: 249px;
+      }
+      .icon:nth-child(1):hover{
+        width: 260px;
+      }
+      .icon:nth-child(2){
+        left: 970px;
+        top: 500px;
+        width: 116px;
+      }
+      .icon:nth-child(2):hover{
+        width: 125px;
+      }
+      .icon:nth-child(3){
+        left: 970px;
+        top: 320px;
+        width: 125px;
+      }
+      .icon:nth-child(3):hover{
+        width: 135px;
+      }
+      .icon:nth-child(4){
+        left: 500px;
+        top: 460px;
+        width: 175px;
+      }
+      .icon:nth-child(4):hover{
+        width: 185px;
+      }
+      .icon:nth-child(5){
+        left: 570px;
+        top: 240px;
+        width: 115px;
+      }
+      .icon:nth-child(5):hover{
+        width: 125px;
+      }
+      .icon:nth-child(6){
+        left: 423px;
+        top: 410px;
+        width: 92px;
+      }
+      .icon:nth-child(6):hover{
+        width: 100px;
+      }
+      .icon:nth-child(7){
+        left: 185px;
+        top: 620px;
+        width: 92px;
+      }
+      .icon:nth-child(7):hover{
+        width: 100px;
+      }
+      .icon:nth-child(8){
+        left: 85px;
+        top: 655px;
+        width: 127px;
+      }
+      .icon:nth-child(8):hover{
+        width: 135px;
+      }
+      .icon:nth-child(9){
+        left: 1070px;
+        top: 500px;
+        width: 105px;
+      }
+      .icon:nth-child(9):hover{
+        width: 115px;
+      }
+      .icon:nth-child(10){
+        left: 1090px;
+        top: 370px;
+        width: 127px;
+      }
+      .icon:nth-child(10):hover{
+        width: 135px;
+      }
+      #overlay1, #overlay2, #overlay3, #overlay4{
+        height: 100%;
+        width: 0;
+        position: fixed; /* Stay in place */
+        z-index: 0; /* Sit on top */
+        left: 0;
+        top: 0;
+        background-color: rgba(0,0,0, 0.7); /* Black w/opacity */
+        overflow-x: hidden; /* Disable horizontal scroll */
+        transition: 1s;
+      }
+
+      .overlay-content {
+          position: relative;
+          top: 25%; /* 25% from the top */
+          width: 100%; /* 100% width */
+          text-align: center; /* Centered text/links */
+          margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+      }
+
+      .imgover{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 50px;
+        color: white;
+        transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        height: auto;
+        width: 850px;
+        margin-top: 175px;
+      }
+
+      .textover{
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        font-size: 25px;
+        color: white;
+        transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        height: auto;
+        width: 600px;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: justify;
+        margin-top: 390px;
+      }
+      .infosup{
+        top: 50%;
+        left: 50%;
+        font-size: 40px;
+        background-color: #191C3B;
+        float: right;
+        color: lightblue;
+      }
+      .infosup:hover{
+        color: gold;
+        cursor: pointer;
+      }
+      .exit{
+          font-size: 50px;
+          left: 50%;
+          color: white;
+          position: absolute;
+          transform: translate(-50%,-475%);
+      }
+    </style>
+  </body>
+</html>
